@@ -1,0 +1,1905 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCrawlers (20160302100608)
+  [1m[35m (314.5ms)[0m  CREATE TABLE `crawlers` (`id` int(11) auto_increment PRIMARY KEY, `category` varchar(255), `type` varchar(255), `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (38.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160302100608')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Mysql2::Error: EXPLAIN/SHOW can not be issued; lacking privileges for underlying table: SHOW FULL FIELDS FROM `hq_active_baobiao`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Mysql2::Error: EXPLAIN/SHOW can not be issued; lacking privileges for underlying table: SHOW FULL FIELDS FROM `hq_active_baobiao`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Mysql2::Error: EXPLAIN/SHOW can not be issued; lacking privileges for underlying table: SHOW FULL FIELDS FROM `hq_active_baobiao`
+  [1m[36m (133.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (310.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCrawlers (20160302100608)
+  [1m[35m (164.8ms)[0m  CREATE TABLE `crawlers` (`id` int(11) auto_increment PRIMARY KEY, `category` varchar(255), `type` varchar(255), `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160302100608')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'haoqu'
+  AND fk.table_name = 'crawlers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `crawlers`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Mysql2::Error: EXPLAIN/SHOW can not be issued; lacking privileges for underlying table: SHOW FULL FIELDS FROM `hq_active_baobiao`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Mysql2::Error: EXPLAIN/SHOW can not be issued; lacking privileges for underlying table: SHOW FULL FIELDS FROM `hq_active_baobiao2`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (76.7ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (33.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (7.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (3.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:20:26', '2016-03-02 10:20:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateCrawlers (20160302100608)
+  [1m[36m (23.6ms)[0m  [1mDROP TABLE `crawlers`[0m
+  [1m[35mSQL (81.4ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160302100608'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCrawlers (20160302100608)
+  [1m[35m (291.1ms)[0m  CREATE TABLE `crawlers` (`id` int(11) auto_increment PRIMARY KEY, `category` varchar(255), `v_type` varchar(255), `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160302100608')
+  [1m[36m (15.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'haoqu'
+  AND fk.table_name = 'crawlers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `crawlers`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (23.7ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:26:28', '2016-03-02 10:26:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateCrawlers (20160302100608)
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE `crawlers`[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160302100608'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCrawlers (20160302100608)
+  [1m[35m (87.5ms)[0m  CREATE TABLE `crawlers` (`id` int(11) auto_increment PRIMARY KEY, `category` varchar(255), `v_type` varchar(255), `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160302100608')
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'haoqu'
+  AND fk.table_name = 'crawlers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `crawlers`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (7.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (18.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (40.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (229.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (53.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:02', '2016-03-02 10:28:02')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:03', '2016-03-02 10:28:03')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:03', '2016-03-02 10:28:03')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:03', '2016-03-02 10:28:03')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:03', '2016-03-02 10:28:03')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:03', '2016-03-02 10:28:03')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`created_at`, `updated_at`) VALUES ('2016-03-02 10:28:03', '2016-03-02 10:28:03')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateCrawlers (20160302100608)
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE `crawlers`[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160302100608'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCrawlers (20160302100608)
+  [1m[35m (127.2ms)[0m  CREATE TABLE `crawlers` (`id` int(11) auto_increment PRIMARY KEY, `category` varchar(255), `v_type` varchar(255), `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160302100608')
+  [1m[36m (16.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'haoqu'
+  AND fk.table_name = 'crawlers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `crawlers`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('321', '32131', '32131', '2016-03-02 10:37:19', '2016-03-02 10:37:19')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '女医明妃传', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寂寞空庭春欲晚 TV版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '青丘狐传说 TV版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '琅琊榜', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '秦时明月 TV版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新萧十一郎', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (29.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '三国演义', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '花千骨 TV版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '三国', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '萧十一郎', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天龙八部', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第三部', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '楚汉传奇', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '水浒传', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '封神英雄', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '错点鸳鸯 戏点鸳鸯', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神话', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '仙剑奇侠传三', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '鹿鼎记', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记续集', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第二部', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神雕侠侣', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新白娘子传奇', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寻秦记', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '康熙王朝', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寂寞空庭春欲晚 未删减版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大汉情缘之云中歌 TV版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛平贵与王宝钏', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (6.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '洗冤录 II', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '还珠格格 第二部', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神医喜来乐', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武媚娘传奇 湖南卫视TV版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛丁山', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '封神榜', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '花千骨 未删减版', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之东邪西毒', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '仙剑奇侠传 第一部', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第一部', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之华山论剑', '2016-03-02 10:37:33', '2016-03-02 10:37:33')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '洗冤录', '2016-03-02 10:37:33', '2016-03-02 10:37:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '女医明妃传', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (15.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寂寞空庭春欲晚 TV版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (15.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '青丘狐传说 TV版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '琅琊榜', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '秦时明月 TV版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新萧十一郎', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (25.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '三国演义', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '花千骨 TV版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '三国', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '萧十一郎', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天龙八部', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第三部', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '楚汉传奇', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '水浒传', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '封神英雄', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '错点鸳鸯 戏点鸳鸯', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神话', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '仙剑奇侠传三', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '鹿鼎记', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记续集', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第二部', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神雕侠侣', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新白娘子传奇', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寻秦记', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '康熙王朝', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寂寞空庭春欲晚 未删减版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大汉情缘之云中歌 TV版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛平贵与王宝钏', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '洗冤录 II', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '还珠格格 第二部', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神医喜来乐', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武媚娘传奇 湖南卫视TV版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛丁山', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '封神榜', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '花千骨 未删减版', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之东邪西毒', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '仙剑奇侠传 第一部', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第一部', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之华山论剑', '2016-03-02 10:44:20', '2016-03-02 10:44:20')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '洗冤录', '2016-03-02 10:44:20', '2016-03-02 10:44:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武林外传', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新水浒传', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '金玉良缘', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '步步惊心', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '倚天屠龙记', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之铁血丹心', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大秦帝国', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '倾世皇妃', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '包青天之开封奇案', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '红楼梦', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '少林寺传奇藏经阁', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '包青天之七侠五义', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '还珠格格 第一部', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '秦时明月 未删减版', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '鼓上蚤时迁', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天涯织女', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (28.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记后传', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大舜', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '李卫当官 第一部', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '古剑奇谭', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '活佛济公3', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '石敢当之雄峙天东', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '美人如画 DVD版', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '少年包青天 第一部', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '铁齿铜牙纪晓岚 第四部', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '绣娘兰馨', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大太监', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大宋提刑官 第一部', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '穆桂英挂帅', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '雍正王朝', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武则天秘史', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新还珠格格', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '风云雄霸天下', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '包青天', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天下第一', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '公主嫁到', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '隋唐英雄传', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (18.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '醋娘子', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (15.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛仁贵传奇', '2016-03-02 10:44:42', '2016-03-02 10:44:42')
+  [1m[36m (15.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '龙门镖局', '2016-03-02 10:44:42', '2016-03-02 10:44:42')[0m
+  [1m[35m (15.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'haoqu'
+  AND fk.table_name = 'crawlers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `crawlers`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateCrawlers (20160302100608)
+  [1m[36m (176.3ms)[0m  [1mDROP TABLE `crawlers`[0m
+  [1m[35mSQL (99.5ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160302100608'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCrawlers (20160302100608)
+  [1m[35m (127.6ms)[0m  CREATE TABLE `crawlers` (`id` int(11) auto_increment PRIMARY KEY, `category` varchar(255), `v_type` varchar(255), `title` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160302100608')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'haoqu'
+  AND fk.table_name = 'crawlers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `crawlers`
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '女医明妃传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '女医明妃传', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寂寞空庭春欲晚 TV版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '青丘狐传说 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (45.7ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '青丘狐传说 TV版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '琅琊榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '琅琊榜', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦时明月 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '秦时明月 TV版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新萧十一郎', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国演义'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '三国演义', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '花千骨 TV版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '三国', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '萧十一郎', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天龙八部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天龙八部', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第三部', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '楚汉传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '楚汉传奇', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '水浒传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '水浒传', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神英雄'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '封神英雄', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '错点鸳鸯 戏点鸳鸯'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '错点鸳鸯 戏点鸳鸯', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神话'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神话', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传三'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '仙剑奇侠传三', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (2.7ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鹿鼎记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '鹿鼎记', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记续集'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记续集', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第二部', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神雕侠侣'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神雕侠侣', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新白娘子传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新白娘子传奇', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寻秦记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寻秦记', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '康熙王朝'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '康熙王朝', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寂寞空庭春欲晚 未删减版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉情缘之云中歌 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大汉情缘之云中歌 TV版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛平贵与王宝钏'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛平贵与王宝钏', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录 II'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '洗冤录 II', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '还珠格格 第二部', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神医喜来乐'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神医喜来乐', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武媚娘传奇 湖南卫视TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武媚娘传奇 湖南卫视TV版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛丁山'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛丁山', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '封神榜', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '花千骨 未删减版', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之东邪西毒'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之东邪西毒', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '仙剑奇侠传 第一部', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神探狄仁杰 第一部', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之华山论剑'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之华山论剑', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '洗冤录', '2016-03-02 10:48:14', '2016-03-02 10:48:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '女医明妃传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '青丘狐传说 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '琅琊榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦时明月 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国演义'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天龙八部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '楚汉传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '水浒传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神英雄'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '错点鸳鸯 戏点鸳鸯'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神话'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传三'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鹿鼎记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记续集'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神雕侠侣'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新白娘子传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.4ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寻秦记'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '康熙王朝'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉情缘之云中歌 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛平贵与王宝钏'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录 II'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神医喜来乐'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武媚娘传奇 湖南卫视TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛丁山'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之东邪西毒'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之华山论剑'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '女医明妃传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '青丘狐传说 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '琅琊榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦时明月 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国演义'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天龙八部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '楚汉传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '水浒传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神英雄'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '错点鸳鸯 戏点鸳鸯'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神话'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传三'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (1.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鹿鼎记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记续集'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神雕侠侣'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新白娘子传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (1.4ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寻秦记'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '康熙王朝'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉情缘之云中歌 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛平贵与王宝钏'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录 II'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神医喜来乐'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.4ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武媚娘传奇 湖南卫视TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛丁山'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.7ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之东邪西毒'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之华山论剑'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武林外传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武林外传', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新水浒传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新水浒传', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '金玉良缘'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '金玉良缘', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (59.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.5ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '步步惊心'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '步步惊心', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '倚天屠龙记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '倚天屠龙记', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之铁血丹心'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '射雕英雄传之铁血丹心', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大秦帝国'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大秦帝国', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '倾世皇妃'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '倾世皇妃', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '包青天之开封奇案'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '包青天之开封奇案', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (1.0ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '红楼梦'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '红楼梦', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '少林寺传奇藏经阁'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '少林寺传奇藏经阁', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '包青天之七侠五义'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '包青天之七侠五义', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '还珠格格 第一部', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦时明月 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '秦时明月 未删减版', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鼓上蚤时迁'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '鼓上蚤时迁', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天涯织女'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天涯织女', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记后传'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '西游记后传', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大舜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大舜', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '李卫当官 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '李卫当官 第一部', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '古剑奇谭'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '古剑奇谭', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '活佛济公3'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '活佛济公3', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '石敢当之雄峙天东'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '石敢当之雄峙天东', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '美人如画 DVD版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '美人如画 DVD版', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '少年包青天 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '少年包青天 第一部', '2016-03-02 10:49:22', '2016-03-02 10:49:22')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '铁齿铜牙纪晓岚 第四部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '铁齿铜牙纪晓岚 第四部', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '绣娘兰馨'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '绣娘兰馨', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.6ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大太监'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大太监', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大宋提刑官 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大宋提刑官 第一部', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '穆桂英挂帅'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '穆桂英挂帅', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '雍正王朝'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '雍正王朝', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武则天秘史'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武则天秘史', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新还珠格格'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新还珠格格', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '风云雄霸天下'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '风云雄霸天下', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '包青天'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '包青天', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天下第一'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天下第一', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '公主嫁到'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '公主嫁到', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '隋唐英雄传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '隋唐英雄传', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '醋娘子'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '醋娘子', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛仁贵传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (3.5ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '薛仁贵传奇', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '龙门镖局'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '龙门镖局', '2016-03-02 10:49:22', '2016-03-02 10:49:22')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '女医明妃传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '青丘狐传说 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '琅琊榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦时明月 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国演义'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天龙八部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '楚汉传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '水浒传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神英雄'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '错点鸳鸯 戏点鸳鸯'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神话'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鹿鼎记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传三'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记续集'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神雕侠侣'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新白娘子传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寻秦记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '康熙王朝'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉情缘之云中歌 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录 II'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛平贵与王宝钏'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神医喜来乐'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武媚娘传奇 湖南卫视TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛丁山'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之东邪西毒'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武林外传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新水浒传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之华山论剑'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '倚天屠龙记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '步步惊心'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '金玉良缘'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之铁血丹心'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大秦帝国'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '倾世皇妃'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '包青天之开封奇案'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '红楼梦'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '少林寺传奇藏经阁'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '包青天之七侠五义'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天涯织女'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鼓上蚤时迁'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '李卫当官 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大舜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记后传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦时明月 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '美人如画 DVD版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '古剑奇谭'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '活佛济公3'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '石敢当之雄峙天东'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '少年包青天 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大太监'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '铁齿铜牙纪晓岚 第四部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大宋提刑官 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新还珠格格'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '绣娘兰馨'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '雍正王朝'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '穆桂英挂帅'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '包青天'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天下第一'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '风云雄霸天下'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '隋唐英雄传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '公主嫁到'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武则天秘史'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉贤后卫子夫 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大汉贤后卫子夫 TV版', '2016-03-03 01:55:58', '2016-03-03 01:55:58')
+  [1m[36m (12.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '醋娘子'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛仁贵传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '铁齿铜牙纪晓岚 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '铁齿铜牙纪晓岚 第二部', '2016-03-03 01:56:19', '2016-03-03 01:56:19')
+  [1m[36m (61.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '龙门镖局'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '金枝欲孽'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '金枝欲孽', '2016-03-03 01:56:19', '2016-03-03 01:56:19')[0m
+  [1m[35m (15.6ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉情缘之云中歌 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大汉情缘之云中歌 未删减版', '2016-03-03 01:56:19', '2016-03-03 01:56:19')[0m
+  [1m[35m (228.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '朱元璋'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '朱元璋', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '小李飞刀'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '小李飞刀', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (98.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武林外史'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武林外史', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鹿鼎记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '回到三国'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '回到三国', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (9.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '哑巴新娘'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '哑巴新娘', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.5ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '铁齿铜牙纪晓岚 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '铁齿铜牙纪晓岚 第一部', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神雕侠侣'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武媚娘传奇 浙江卫视TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '武媚娘传奇 浙江卫视TV版', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '钱塘传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '钱塘传奇', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉贤后卫子夫 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '大汉贤后卫子夫 未删减版', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '聊斋'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '聊斋', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '聚宝盆'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '聚宝盆', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (70.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神机妙算刘伯温 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '神机妙算刘伯温 TV版', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神榜之凤鸣岐山'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '封神榜之凤鸣岐山', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '少年包青天 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '少年包青天 第二部', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寒山潜龙'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '寒山潜龙', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新济公活佛 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '新济公活佛 未删减版', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.6ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '宫心计'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '宫心计', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天龙八部 浙江卫视TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '天龙八部 浙江卫视TV版', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '铁齿铜牙纪晓岚 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '铁齿铜牙纪晓岚 第三部', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '少年包青天 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '少年包青天 第三部', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '甘十九妹'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '甘十九妹', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '龙巡天下'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '龙巡天下', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '汉武大帝'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '汉武大帝', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '龙门镖局之为2归来'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '龙门镖局之为2归来', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦始皇'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '秦始皇', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '还珠格格 第三部', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.4ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '红墨坊'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '红墨坊', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '侠客行'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '侠客行', '2016-03-03 01:56:20', '2016-03-03 01:56:20')[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天龙八部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '宰相刘罗锅'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '宰相刘罗锅', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '上错花轿嫁对郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '上错花轿嫁对郎', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '精忠岳飞'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '精忠岳飞', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '聊斋奇女子'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '聊斋奇女子', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '李卫当官 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '李卫当官 第三部', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '隋唐英雄之薛刚反唐 DVD版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '隋唐英雄之薛刚反唐 DVD版', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '山河恋'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `crawlers` (`category`, `v_type`, `title`, `created_at`, `updated_at`) VALUES ('电视剧', '古装', '山河恋', '2016-03-03 01:56:20', '2016-03-03 01:56:20')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
