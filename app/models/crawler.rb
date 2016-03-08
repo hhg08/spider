@@ -19,7 +19,8 @@ class Crawler < ActiveRecord::Base
 
 		def save_data(url)
 			mechanize = Mechanize.new
-			page = mechanize.get(url)
+			page = mechanize.get(url) rescue nil
+			return  if page.nil?
 			#视频分类
 			return if (page.css('div .item-moreshow ul li span').empty?)
 			v_class = page.css('div .item-moreshow ul li span')[0].text
@@ -32,14 +33,14 @@ class Crawler < ActiveRecord::Base
 					p v_title
 					crawler = Crawler.where(category:v_class,v_type:v_type,title:v_title).first
 					crawler||=Crawler.new(category:v_class,v_type:v_type,title:v_title)
-					crawler.save
+					crawler.save rescue nil
 				end
 			elsif !(page.css('div .v-meta-title a').empty?)
 				page.css('div .v-meta-title a').each do |video_link|
 					v_title = video_link["title"]
 					crawler = Crawler.where(category:v_class,v_type:v_type,title:v_title).first
 					crawler||=Crawler.new(category:v_class,v_type:v_type,title:v_title)
-					crawler.save
+					crawler.save rescue nil
 				end
 			else
 				return
@@ -53,6 +54,7 @@ class Crawler < ActiveRecord::Base
 		def get_tv_to_documentary_urls
 			urls = []
 			#资讯之前的都遵循下面的规则
+			#["c_84"=>"纪录片","c_85"=>"综艺", "c_87"=>"教育","c_91"=>"资讯","c_95"=>"音乐", "c_96"=>"电影", "c_97"=>"电视剧","c_100"=>"动漫"]
 			categories = ["c_97", "c_96", "c_85", "c_100", "c_87", "c_84","c_91","c_95"]
 			#把每个频道包含的类型添加进来
 			channel_type = {"c_84"=>["c84_人物","c84_军事","c84_历史","c84_自然","c84_古迹","c84_探险","c84_科技","c84_文化","c84_刑侦","c84_社会","c84_旅游"],
@@ -91,7 +93,8 @@ class Crawler < ActiveRecord::Base
 		def get_news_to_joke_urls
 			urls = []
 			#url变化从资讯的仅视频开始
-			another_group_categories = ["c91","c86","c87","c88","c89","c90","c94","c95","c98","c99","c103","c104","c105","c171"]
+			#["c86"=>"娱乐","c87"=>"教育","c88"=>"旅游","c89"=>"时尚","c90"=>"亲子","c91"=>"资讯","c94"=>"搞笑","c95"=>"音乐","c98"=>"体育","c99"=>"游戏","c103"=>"生活","c104"=>"汽车","c105"=>"科技"]
+			another_group_categories = ["c91","c86","c87","c88","c89","c90","c94","c95","c98","c99","c103","c104","c105"]
 			another_group_channel_type = {
 										"c91"=>["c91_2143","c91_2147","c91_2148","c91_2144","c91_258","c91_308","c91_2351"],
 										"c86"=>["c86_2146","c86_2077","c86_2067","c86_2142","c86_2076","c86_2312","c86_2309","c86_2311","c86_2350"],
@@ -135,65 +138,5 @@ class Crawler < ActiveRecord::Base
 			end
 			urls
 		end
-
-
-		#形成txt方式
-		# def get_datas_by_urls
-		# 	hash = {}
-		# 	datas = []
-		# 	urls = get_urls
-		# 	p "=========共#{urls.size}个url"
-		# 	i = 0
-		# 	urls.each do |url|
-		# 		i +=1
-		# 		get_data = get_data_by_url(url)
-		# 		next if get_data.empty?
-		# 		datas << get_data
-		# 		p "--------number:#{i}"
-		# 		p '--------sleep'
-		# 		sleep(20)
-		# 	end
-		# 	datas_hash = {}
-		# 	datas.each do |obj_data|
-		# 		obj_data.each do |k,v|
-		# 			if !datas_hash[k].nil?
-		# 				datas_hash[k] += v
-		# 			else
-		# 				datas_hash[k] = v
-		# 			end
-		# 		end
-		# 	end
-		# 	datas_hash=datas_hash.compact
-		# 	File.open("#{Rails.root}/public/youku_datas.txt","w+") do|file|
-		# 		file.write(datas_hash)
-		# 	end
-		# end
-
-
-		# def get_data_by_url(url)
-		# 	mechanize = Mechanize.new
-		# 	page = mechanize.get(url)
-		# 	ret_hash = {}
-		# 	value_arr = []
-		# 	#视频分类
-		# 	return {} if (page.css('div .item-moreshow ul li span').empty?)
-		# 	v_class = page.css('div .item-moreshow ul li span')[0].text
-		# 	v_type = page.css('div .item-moreshow ul li span')[1].text
-		# 	if !(page.css('div .p-meta-title a').empty?)
-		# 		page.css('div .p-meta-title a').each do |video_link|
-		# 			v_title = video_link["title"]
-		# 			value_arr << v_title
-		# 		end
-		# 	elsif !(page.css('div .v-meta-title a').empty?)
-		# 		page.css('div .v-meta-title a').each do |video_link|
-		# 			v_title = video_link["title"]
-		# 			value_arr << v_title
-		# 		end
-		# 	else
-		# 		return {}
-		# 	end
-		# 	ret_hash["#{v_class}_#{v_type}"] = value_arr
-		# 	ret_hash
-		# end
 	end
 end

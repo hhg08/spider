@@ -1,0 +1,128 @@
+D, [2016-03-03T11:05:31.595742 #4579] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`title` = '女医明妃传' AND `crawlers`.`v_type` = '古装'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+E, [2016-03-03T11:05:31.595833 #4579] ERROR -- : Mysql2::Error: Unknown column 'crawlers.v_type' in 'where clause': SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`title` = '女医明妃传' AND `crawlers`.`v_type` = '古装'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.819671 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '女医明妃传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.868830 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.869400 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.870238 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.870528 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.870877 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.871468 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '青丘狐传说 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.871729 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.872057 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.872661 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '琅琊榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.872917 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.873252 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.873819 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '秦时明月 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.874084 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.874520 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.875453 #4580] DEBUG -- :   [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.875742 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.876113 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.876784 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国演义'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.877046 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.877377 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.878021 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.878281 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.878622 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.879243 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '三国'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.879480 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.879829 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.880414 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '萧十一郎'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.880694 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.881046 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.881707 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.881948 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.882282 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.882919 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '天龙八部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.883199 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.883538 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.884186 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第三部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.884416 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.884771 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.885383 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '楚汉传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.885631 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.885946 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.886539 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '水浒传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.886786 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.887103 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.887694 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神英雄'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.887928 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.888271 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.888911 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '错点鸳鸯 戏点鸳鸯'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.889143 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.889512 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.890118 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神话'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.890375 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.890694 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.891350 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '鹿鼎记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.891587 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.891921 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.892570 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传三'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.892814 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.893148 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.893760 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.894015 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.894353 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.894936 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寂寞空庭春欲晚 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.895184 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.895524 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.896123 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '西游记续集'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.896369 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.896721 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.897423 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神雕侠侣'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.897675 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.898040 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.898734 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.899004 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.899324 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.900000 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '新白娘子传奇'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.900246 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.900587 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.901225 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '寻秦记'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.901473 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.901803 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.902381 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '康熙王朝'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.902619 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.902945 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.903614 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '大汉情缘之云中歌 TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.904056 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.904472 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.905181 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录 II'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.905471 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.905815 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.906617 #4580] DEBUG -- :   [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛平贵与王宝钏'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.906945 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.907452 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.908250 #4580] DEBUG -- :   [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '还珠格格 第二部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.908567 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.909014 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.909787 #4580] DEBUG -- :   [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神医喜来乐'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.910091 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.910533 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.911331 #4580] DEBUG -- :   [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '封神榜'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.911670 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.912128 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.912958 #4580] DEBUG -- :   [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武媚娘传奇 湖南卫视TV版'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.913302 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.913803 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.914648 #4580] DEBUG -- :   [1m[35mCrawler Load (0.3ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '薛丁山'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.914910 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.915283 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.915941 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '射雕英雄传之东邪西毒'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.916196 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.916536 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.917129 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '花千骨 未删减版'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.917433 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.917806 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.918482 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '神探狄仁杰 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.918748 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.919096 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.919708 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '仙剑奇侠传 第一部'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.919946 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.920283 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
+D, [2016-03-03T11:05:58.920874 #4580] DEBUG -- :   [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '洗冤录'  ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+D, [2016-03-03T11:05:58.921118 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-03-03T11:05:58.921446 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+D, [2016-03-03T11:05:58.922043 #4580] DEBUG -- :   [1m[35mCrawler Load (0.2ms)[0m  SELECT  `crawlers`.* FROM `crawlers` WHERE `crawlers`.`category` = '电视剧' AND `crawlers`.`v_type` = '古装' AND `crawlers`.`title` = '武林外传'  ORDER BY `crawlers`.`id` ASC LIMIT 1
+D, [2016-03-03T11:05:58.922295 #4580] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-03-03T11:05:58.922615 #4580] DEBUG -- :   [1m[35m (0.1ms)[0m  COMMIT
