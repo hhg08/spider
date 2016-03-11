@@ -2,6 +2,7 @@
 require 'mechanize'
 require 'nokogiri'
 require 'json'
+require 'csv'
 class Crawler < ActiveRecord::Base
 	class << self
 		def save_datas
@@ -23,14 +24,12 @@ class Crawler < ActiveRecord::Base
 			return  if page.nil?
 			#视频分类
 			return if (page.css('div .item-moreshow ul li span').empty?)
-			v_class = page.css('div .item-moreshow ul li span')[0].text
-			v_type = page.css('div .item-moreshow ul li span')[1].text
+			v_class = page.css('div .item-moreshow ul li span')[0].text if page.css('div .item-moreshow ul li span')[0]
+			v_type = page.css('div .item-moreshow ul li span')[1].text if page.css('div .item-moreshow ul li span')[1]
+			return  if (v_class.nil? || v_type.nil?|| v_class.empty?|| v_type.empty?)
 			if !(page.css('div .p-meta-title a').empty?)
 				page.css('div .p-meta-title a').each do |video_link|
 					v_title = video_link["title"]
-					p v_class
-					p v_type
-					p v_title
 					crawler = Crawler.where(category:v_class,v_type:v_type,title:v_title).first
 					crawler||=Crawler.new(category:v_class,v_type:v_type,title:v_title)
 					crawler.save rescue nil
@@ -137,6 +136,15 @@ class Crawler < ActiveRecord::Base
 				end
 			end
 			urls
+		end
+
+		def export_datas
+			CSV.open("#{Rails.root}/public/crawler.csv", "w") do |csv|
+				csv << ["category","v_type","title"]
+				Crawler.all.each do |crawler|
+					csv << [crawler.category,crawler.v_type,crawler.title]
+				end
+			end
 		end
 	end
 end
